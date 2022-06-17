@@ -3,13 +3,13 @@ Describe Player()
 ```
 Test: "It should return an object with name and board array"\
 Code: 
-let player1 = new Player("Ben");\
+let player1 = new Player("Ben", "active");\
 player1;\
 Expected Output: 
-Player {name: 'Ben', board: Array(9), active: true}
-active: true
+Player {name: 'Ben', board: Array(9), status: 'active'}
 board: (9) ['0', '1', '2', '3', '4', '5', '6', '7', '8']
 name: "Ben"
+status: "active"
 
 ```sh
 Describe mark()
@@ -20,10 +20,10 @@ let player1 = new Player("Ben");\
 player1.mark(0, "x");\
 player1;\
 Expected Output: 
-Player {name: 'Ben', board: Array(9), active: true}
-active: true
+Player {name: 'Ben', board: Array(9), status: 'active'}
 board: (9) ['x', '1', '2', '3', '4', '5', '6', '7', '8']
 name: "Ben"
+status: "active"
 
 ```sh
 Describe checkWinner()

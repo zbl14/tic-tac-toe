@@ -1,12 +1,12 @@
 // Business Logics
-function Player(name) {
+function Player(name, status) {
   this.name = name;
   this.board = ["0", "1", "2", "3", "4", "5", "6", "7", "8"];
-  this.active = true
+  this.status = status
 }
 
-let player1 = new Player("Ben");
-let player2 = new Player("Carrie");
+let player1 = new Player("Ben", "active");
+let player2 = new Player("Carrie", "inactive");
 
 
 Player.prototype.mark = function(index, mark) {
@@ -33,9 +33,6 @@ Player.prototype.checkWinner = function() {
   }
   return false 
 }
-
-
-
 
 // UI Logics
 
