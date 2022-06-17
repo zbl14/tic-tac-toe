@@ -15,6 +15,7 @@
   margin:1%; 
   float:left; 
   display:block;
+  cursor: pointer;
 }
 
 .flex-center-container {
@@ -26,4 +27,12 @@
 .input-container {
   width: 30%;
   margin: 1rem;
+}
+
+.red {
+  background-color: red;
+}
+
+.green {
+  background-color: green;
 }

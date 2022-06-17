@@ -34,6 +34,8 @@ Player.prototype.checkWinner = function() {
   return false 
 }
 
+
+
 // UI Logics
 
 $(document).ready(function() {
@@ -47,4 +49,45 @@ $(document).ready(function() {
     $(".player2Name").html(player2.name);
     $("#newPlayer").hide();
     });
+
+    $("#box0").click(function(){
+      console.log("hi")
+      if (player1.status === "active" && player2.status === "inactive") {
+        $("#box0").addClass("red")
+        player1.mark(0, "X");
+        player2.mark(0, "X");
+      } else {
+        $("#box0").addClass("green")
+        player1.mark(0, "O");
+        player2.mark(0, "O");
+      }
+    });
+
+    $("#box1").click(function(){
+      console.log("hi")
+      if (player1.status === "active" && player2.status === "inactive") {
+        $("#box1").addClass("red")
+        player1.mark(0, "X");
+        player2.mark(0, "X");
+      } else {
+        $("#box1").addClass("green")
+        player1.mark(0, "O");
+        player2.mark(0, "O");
+      }
+    });
+
+    $("#box2").click(function(){
+      console.log("hi")
+      if (player1.status === "active" && player2.status === "inactive") {
+        $("#box2").addClass("red")
+        player1.mark(0, "X");
+        player2.mark(0, "X");
+      } else {
+        $("#box2").addClass("green")
+        player1.mark(0, "O");
+        player2.mark(0, "O");
+      }
+    });
   });
+
+
