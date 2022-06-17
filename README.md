@@ -1,8 +1,8 @@
 ```sh
 Describe Game()
 ```
-Test: "It should return an object with name, space object, and currentId: 0"\
+Test: "It should return an object with name and board object"\
 Code: let game = new Game("Ben");\
-Expected Output: Game {name: 'Ben', space: {…}, currentId: 0}
+Expected Output: Game {name: 'Ben', board: {…}}
 
 
