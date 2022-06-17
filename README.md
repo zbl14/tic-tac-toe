@@ -25,4 +25,12 @@ active: true
 board: (9) ['x', '1', '2', '3', '4', '5', '6', '7', '8']
 name: "Ben"
 
+```sh
+Describe checkWinner()
+```
+Test: "It should return true if player1.board[0], player1.board[1], player1.board[2] are all 'x' "\
+Code:\
+player1.checkWinner();\
+Expected Output: True
+
 
