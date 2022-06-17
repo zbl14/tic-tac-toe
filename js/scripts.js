@@ -7,7 +7,9 @@ let player1 = new Player("Ben");
 let player2 = new Player("Carrie");
 
 
-
+Player.prototype.mark = function(index, mark) {
+  this.board[index] = mark;
+}
 
 
 
