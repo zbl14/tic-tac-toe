@@ -36,34 +36,15 @@ Player.prototype.checkWinner = function() {
 
 // UI Logics
 
-
-
-
-
-
-
-// function Board() {
-//   this.space = {};
-//   this.currentId = 0 ;
-// }
-
-// Board.prototype.addSpace = function(space) {
-//   contact.id = this.assignId();
-//   this.spaces[position.id] = space;
-// };
-
-// Board.prototype.assignedId = function() {
-//   this.currentId += 1;
-//   return this.currentId;
-// }
-
-// Board.prototype.findSpace = function(id) {
-//   if (this.spaces[id] != undefined) {
-//     return this.spaces[id];
-//   }
-//   return false
-// }
-
-// function Space(x, y) {
-//   this.position = (x,y)
-// }
+$(document).ready(function() {
+  $("form#newPlayer").submit(function(event) {
+    event.preventDefault();
+    let player1Name = $("input#player1Name").val();
+    let player2Name = $("input#player2Name").val();
+    player1.name = player1Name;
+    player2.name = player2Name;
+    $(".player1Name").html(player1.name);
+    $(".player2Name").html(player2.name);
+    $("#newPlayer").hide();
+    });
+  });
